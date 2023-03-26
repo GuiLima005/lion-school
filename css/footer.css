@@ -1,0 +1,27 @@
+.container-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contato {
+    display: flex;
+    font-size: 1rem;
+    gap: 24px;
+}
+
+.container-social {
+    display: flex;
+    gap: 20px;
+}
+
+.social {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    font-size: 1.2rem;
+}

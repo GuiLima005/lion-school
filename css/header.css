@@ -1,0 +1,17 @@
+.logo {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.sair {
+    display: flex;
+    gap: 12px;
+    font-size: 2rem;
+    align-items: center;
+    font-weight: 500;
+
+}
+
