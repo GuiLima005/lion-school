@@ -18,13 +18,7 @@ header{
     color: #ffff;
     background-color: var(--desktop-color);
 }
-main {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-areas: 'left  right';
-    align-items: center;
-    padding: 70px;
-}
+
 
 footer {
     display: flex;

@@ -1,0 +1,42 @@
+:root{
+    --sub-header: rgba(188, 194, 229, 1);
+}
+main {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+    grid-template-areas: 
+        'sub-header'
+        'main';
+    align-items: center;
+}
+.sub-header {
+    display: flex;
+    grid-area: 'sub-header';
+    height: 100%;
+    max-width: 100%;
+    padding: 0px 96px;
+    justify-content: space-between;
+    align-items: center;
+    
+    background-color: var(--sub-header);
+}
+.legenda {
+    display: flex;
+    gap: 24px;
+}
+.bars {
+    display: flex;
+    gap: 30px;
+}
+.status {
+    display: flex;
+    gap: 8px;
+}
+.box {
+    height: 20px;
+    width: 20px;
+    background-color: rgba(51, 71, 176, 1);
+}
+.box:last-child {
+    background-color: rgba(229, 182, 87, 1);
+}
