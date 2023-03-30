@@ -7,7 +7,6 @@ main {
     grid-template-areas: 
         'sub-header'
         'main';
-    align-items: center;
 }
 .sub-header {
     display: flex;
@@ -39,4 +38,33 @@ main {
 }
 .box:last-child {
     background-color: rgba(229, 182, 87, 1);
+}
+.container-main {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    grid-area: main;
+    max-width: 100%;
+    padding: 35px 0;
+}
+.title {
+    font-size: 4rem;
+    text-align: center;
+    color: rgba(51, 71, 176, 1);
+}
+.container-alunos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 61px;
+    padding: 35px 50px;
+    color: white;
+}
+
+.alunos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 300px;
+    width: 200px;
+    background-color: rgba(51, 71, 176, 1);
 }

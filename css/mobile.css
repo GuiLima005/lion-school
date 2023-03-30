@@ -1,0 +1,35 @@
+@media (max-width:640px) {
+    .logo img {
+        display: block;
+    }
+    .container-contato {
+        align-items: center;
+    }
+    
+    .container-social {
+        display: flex;
+        gap: 23px;
+        transform: translate(0px, -72px);
+    }
+    .sair p {
+        display: none;
+    }
+
+    header {
+        padding: 0;
+        padding: 0 28px;
+    }
+    footer {
+        flex-direction: column;
+        padding: 0px;
+        padding-top: 20px;
+        height: 300px;
+        justify-content: space-around;
+    }
+    .container-copy{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(0px, 80px);
+    }
+}

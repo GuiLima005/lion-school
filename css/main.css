@@ -30,7 +30,6 @@ main {
 }
 .container-right {
     grid-area: right;
-    justify-content: end;
     display: flex;
 }
 .img {
@@ -40,15 +39,15 @@ main {
 
 .boxs {
     display: flex;
-    flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 50px;
 }
 
 .box{
     display: flex;
-    height: 200px;
-    width: 400px;
+    height: 220px;
+    width: 300px;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
@@ -58,4 +57,44 @@ main {
     gap: 24px;
     border: 1px solid rgba(0, 0, 0, 1);
     box-shadow: 12px 12px 4px 0px rgba(51, 71, 176, 0.5);
+}
+@media (max-width:640px) {
+    main {
+        padding: 0;
+        padding-top: 35px;
+        padding-bottom: 90px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    header {
+        padding: 0;
+        padding: 0 28px;
+    }
+    footer {
+        flex-direction: column;
+        padding: 0px;
+        padding-top: 20px;
+        height: 300px;
+        justify-content: space-around;
+  
+    }
+    .box {
+        height: 175px;
+        width: 175px;
+    }
+    .box i{
+       display: none;
+    }
+    .escolha{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+    .sair p {
+        display: none;
+    }
+    img{
+        display: none;
+    }
+   
 }
