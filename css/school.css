@@ -57,6 +57,7 @@ main {
     gap: 24px;
     border: 1px solid rgba(0, 0, 0, 1);
     box-shadow: 12px 12px 4px 0px rgba(51, 71, 176, 0.5);
+    
 }
 @media (max-width:640px) {
     main {
@@ -67,18 +68,7 @@ main {
         flex-direction: column;
         gap: 20px;
     }
-    header {
-        padding: 0;
-        padding: 0 28px;
-    }
-    footer {
-        flex-direction: column;
-        padding: 0px;
-        padding-top: 20px;
-        height: 300px;
-        justify-content: space-around;
-  
-    }
+   
     .box {
         height: 175px;
         width: 175px;
