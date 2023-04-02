@@ -24,23 +24,41 @@ main {
     display: flex;
     gap: 24px;
 }
-.bars {
-    display: flex;
-    gap: 90px;
+.legenda-mobile{
+    display: none;
+}
+
+select {
+    background: none;
+    appearance: none;
+    border: none;
+    outline: none;
+    color: var(--desktop-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+
+}
+
+select option {
+    color: white;
+    font-size: 1rem;
+    background-color: var(--desktop-color);
 }
 .status {
     display: flex;
     gap: 8px;
 }
-.box {
+.box-cursando {
     height: 20px;
     width: 20px;
     background-color: var(--desktop-color);
     box-shadow: 4px 2px 4px 0px rgba(0, 0, 0, 0.25);
-
 }
-.box:last-child {
+.box-finalizado {
+    height: 20px;
+    width: 20px;
     background-color: rgba(229, 182, 87, 1);
+    box-shadow: 4px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .container-main {
     display: grid;
@@ -60,9 +78,7 @@ main {
     gap: 61px;
     padding: 35px 50px;
     color: white;
-}
-.cursando {
-    background-color: red;
+    justify-content: center;
 }
 
 .alunos {
@@ -74,14 +90,34 @@ main {
     width: 200px;
     background-color: rgba(51, 71, 176, 1);
     box-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+}
+
+.cursando {
+    background-color: rgba(51, 71, 176, 1);
 
 }
+
+.finalizado {
+    background-color: rgba(229, 182, 87, 1);
+
+}
+.alunos:hover {
+    transform: scale(1.1);
+  }
 
 @media (max-width:640px) { 
     .container-main {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .legenda {
+        display: none;
+    }
+    .legenda-mobile {
+        display: block;
     }
     .sub-header {
         padding: 0px 15px;
@@ -100,5 +136,25 @@ main {
     .ano {
         display: none;
     }
+    .legenda-mobile select {
+        background: none;
+        appearance: none;
+        border: none;
+        outline: none;
+        color: var(--desktop-color);
+        font-size: 1.1rem;
+        cursor: pointer;
+
+    }
+    
+    .legenda-mobile select option {
+        color: #3347B0;
+        font-size: 1rem;
+        background-color: white;
+}
+    .legenda-mobile select option:last-child {
+    color: #E5B657;
+    font-size: 1rem;
 }
 
+}

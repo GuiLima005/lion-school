@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./css/turma.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/mobile.css">
+    <script src="./js/turma.js" defer type="modulo"></script>
     <link rel="icon" href="./img/logo-image.png">
 
     <title>Lion Turma</title>
@@ -21,70 +22,89 @@
 
 <body>
     <header>
-        <div class="logo">
+
+        <a class="logo" href="./index.html">
             <img src="./img/logo-image.png" alt="logo da escola">
             <p>Lion<br>School</p>
-        </div>
+        </a>
+
         <div class="sair">
             <i class="fa-solid fa-share-from-square"></i>
             <p>Voltar</p>
         </div>
+
     </header>
 
     <main>
         <div class="sub-header">
                 <div class="bars">
-                    <p>Status</p>
-                    <p class="ano">Ano</p>
+                    <select name="status">
+                        <option value="status">Status</option>
+                        <option value="cursando">Cursando</option>
+                        <option value="finalizado">Finalizado</option>
+                    </select>
                 </div>
+
             <div class="legenda">
                 <p>LEGENDA</p>
                 <div class="status">
-                    <div class="box"></div>
+                    <div class="box-cursando"></div>
                     <p>Cursando</p>
                 </div>
                 <div class="status">
-                    <div class="box"></div>
+                    <div class="box-finalizado"></div>
                     <p>Finalizado</p>
                 </div>
             </div>
+
+            <div class="legenda-mobile">
+                <select name="status" id="status-select">
+                    <option value="cursando">Legenda</option>
+                    <option value="cursando">Cursando</option>
+                    <option value="finalizado">Finalizado</option>
+                </select>
+            </div>
         </div>
 
-        <div class="container-main">
+        <div class="container-main" id="container-main">
+            
             <div>
                 <h2 class="title">Desenvolvimento de sistemas</h2>
             </div>
 
-            <div class="container-alunos">
-                <div class="alunos">
-                    <img class="aluno" src="./img/aluno.png" alt="">
-                    <p class="nome">José Matheus da Silva Miranda</p>
-                </div>
-                <div class="alunos">
-                    <img class="aluno" src="./img/aluno.png" alt="">
-                    <p class="nome">José Matheus da Silva Miranda</p>
+            <div class="container-alunos" id="container-alunos">
+            
+                <div class="alunos finalizado">
+                    <img class="aluno" src="./img/aluna.png" alt="">
+                    <p class="nome">HÉLIDA BENTO DE OLIVEIRA LINS</p>
                 </div>
                 <div class="alunos cursando">
                     <img class="aluno" src="./img/aluno.png" alt="">
                     <p class="nome">José Matheus da Silva Miranda</p>
                 </div>
-                <div class="alunos">
+                <div class="alunos finalizado">
+                    <img class="aluno" src="./img/aluna.png" alt="">
+                    <p class="nome">HÉLIDA BENTO DE OLIVEIRA LINS</p>
+                </div>
+                <div class="alunos cursando">
                     <img class="aluno" src="./img/aluno.png" alt="">
                     <p class="nome">José Matheus da Silva Miranda</p>
                 </div>
-                <div class="alunos">
+                <div class="alunos finalizado">
+                    <img class="aluno" src="./img/aluna.png" alt="">
+                    <p class="nome">HÉLIDA BENTO DE OLIVEIRA LINS</p>
+                </div>
+                <div class="alunos cursando">
                     <img class="aluno" src="./img/aluno.png" alt="">
                     <p class="nome">José Matheus da Silva Miranda</p>
                 </div>
-                <div class="alunos">
-                    <img class="aluno" src="./img/aluno.png" alt="">
-                    <p class="nome">José Matheus da Silva Miranda</p>
+                <div class="alunos finalizado">
+                    <img class="aluno" src="./img/aluna.png" alt="">
+                    <p class="nome">HÉLIDA BENTO DE OLIVEIRA LINS</p>
                 </div>
-                <div class="alunos">
-                    <img class="aluno" src="./img/aluno.png" alt="">
-                    <p class="nome">José Matheus da Silva Miranda</p>
-                </div>
+
             </div>
+
         </div>
 
     </main>
