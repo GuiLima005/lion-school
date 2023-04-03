@@ -1,33 +1,44 @@
 'use strict'
 
-// import { cursos } from "./cursos"
+// import {teste} from '../api/teste.js'
 
+const criarCurso = (cursos) => {
 
-// const criarCurso = (cursos) => {
+    const card = document.createElement('a')
+    card.classList.add('curso')    
+    card.href = './turma.html'
 
-//     const box = document.createElement('div')
-//     box.classList.add('boxs')
+    const icone = document.createElement('img')
+    icone.classList.add('icone')
+    icone.src = cursos.icon
 
-//     const curso = document.createElement('div')
-//     curso.classList.add('curso')
+    const nome = document.createElement('span')
+    nome.textContent = cursos.sigla
 
-//     // const icone = document.createElement('img')
-//     // icone.classList.add('icone')
-//     // icone.src = `./${cursos.icone}`
+    card.append(icone, nome)
+    
+    return card
+}
 
-//     const nome = document.createElement('span')
-//     nome.textContent = cursos.sigla
+const carregarCurso = async () => {
 
-//     box.append(curso)
-//     curso.append( nome)
+    const novoCurso = document.getElementById('boxs')
+    const card = await linkCursos()
 
-//     return box
-// }
+    const cursosCard = card.map(criarCurso)
 
-// const carregarCurso = async () => {
+    novoCurso.replaceChildren(...cursosCard)    
+}
 
-//     const novoCurso = document.getElementById('container-right')
-//     const curso = cursos.map(criarCurso)
-//     novoCurso.replaceChildren(curso)
-// }
-// carregarCurso()
+const linkCursos = async () => {
+
+    const url = `http://localhost:8080/v1/lion-school/cursos`
+
+    const response = await fetch(url)
+    const data = await response.json()
+    
+    return data.curso
+
+}
+
+carregarCurso()
