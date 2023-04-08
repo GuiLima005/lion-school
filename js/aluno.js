@@ -38,7 +38,7 @@ const criarNotas = (diciplina) => {
 
     const nota = document.createElement('div')
     
-    if (diciplina.media >= 59) {
+    if (diciplina.media >= 65) {
 
         media.classList.add("media-azul")
         media.textContent = diciplina.media
@@ -46,7 +46,7 @@ const criarNotas = (diciplina) => {
         nota.classList.add("nota-alta");
         nota.style.height = `${diciplina.media}%`
        
-    } else if (diciplina.media < 59 && diciplina.media >= 50) {
+    } else if (diciplina.media < 65 && diciplina.media >= 50) {
 
         media.classList.add("media-amarela")
         media.textContent = diciplina.media

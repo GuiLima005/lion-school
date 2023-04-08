@@ -26,11 +26,16 @@
         padding-top: 20px;
         height: 300px;
         justify-content: space-around;
+        font-size: .9rem;
+        text-align: center;
     }
     .container-copy{
         display: flex;
         justify-content: center;
         align-items: center;
         transform: translate(0px, 80px);
+    }
+    .professora {
+        height: 290px;
     }
 }
