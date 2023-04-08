@@ -70,7 +70,7 @@ const criarNotas = (diciplina) => {
 
     const sigla = document.createElement('p')
     sigla.classList.add('sigla')
-    // sigla.textContent = diciplina.nome
+    // sigla.textContent = diciplina.nome[0]
 
 
     materia.append(media, barra, sigla)

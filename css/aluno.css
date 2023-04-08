@@ -130,4 +130,7 @@ main {
         padding: 25px 0px;
         gap: 12px;
     }
+    .sigla {
+        font-size: .9rem;
+    }
 }
