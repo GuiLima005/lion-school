@@ -1,9 +1,9 @@
 'use strict'
 
 const criarTitle = () => {
-    let title = localStorage.getItem("nomeDoCurso");
-    let titleCourse = document.querySelector(".title");
-    titleCourse.innerHTML = title;
+    let title = localStorage.getItem("nomeDoCurso")
+    let titleCourse = document.querySelector(".title")
+    titleCourse.innerHTML = title
     
 }
 
@@ -22,25 +22,30 @@ const criarListaAlunos = (aluno) => {
     }
 
     cardAluno.onclick = () => {
-        localStorage.setItem("matricula", cardAluno.id);
-    };
+        localStorage.setItem("matricula", cardAluno.id)
+        localStorage.setItem("foto",  img.id)
+        localStorage.setItem("nome",  nome.id)
+    }
 
     const img = document.createElement('img')
     img.classList.add('aluno')
     img.src = aluno.foto
+    img.id = aluno.foto
 
     const nome = document.createElement('p')
     nome.classList.add('nome')
     nome.textContent = aluno.nome
+    nome.id = aluno.nome
 
     cardAluno.append(img, nome)
 
     return cardAluno
+
 }
 
 const carregarListaAlunos  = async () => {
 
-    let siglaCurso = localStorage.getItem("sigla");
+    let siglaCurso = localStorage.getItem("sigla")
     const url = `http://localhost:8080/v1/lion-school/alunos/curso?sigla=${siglaCurso}`
 
     const response = await fetch(url)
@@ -48,12 +53,10 @@ const carregarListaAlunos  = async () => {
     const data = await response.json()
 
     console.log(data);
-    
 
     const novoAluno = document.getElementById('container-alunos')
     const alunosCard = data.alunos.map(criarListaAlunos)
 
     novoAluno.replaceChildren(...alunosCard)
 }
-
 carregarListaAlunos()

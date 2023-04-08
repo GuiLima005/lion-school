@@ -1,25 +1,24 @@
 'use strict'
 
-// import {teste} from '../api/teste.js'
-
-const criarCurso = (cursos) => {
+const criarCurso = (curso) => {
 
     const card = document.createElement('a')
     card.classList.add('curso')    
     card.href = './turma.html'
-    card.id = cursos.sigla
+    card.id = curso.sigla
 
     card.onclick = () => {
         localStorage.setItem("sigla", card.id);
-        localStorage.setItem("nomeDoCurso", cursos.nome);
+        localStorage.setItem("nomeDoCurso", curso.nome);
       };
 
     const icone = document.createElement('img')
     icone.classList.add('icone')
-    icone.src = cursos.icon
+    icone.src = curso.icon
+    icone.alt = "icone do curso"
 
     const nome = document.createElement('span')
-    nome.textContent = cursos.sigla
+    nome.textContent = curso.sigla
 
     card.append(icone, nome)
     
@@ -34,10 +33,11 @@ const carregarCurso = async () => {
 
     const data = await response.json()
 
-    let cursos = data.curso
+
+    console.log(data);
 
     const novoCurso = document.getElementById('boxs')
-    const cursosCard = cursos.map(criarCurso)
+    const cursosCard = data.curso.map(criarCurso)
 
     novoCurso.replaceChildren(...cursosCard)    
 }

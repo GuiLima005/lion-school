@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,8 +15,10 @@
     <link rel="stylesheet" href="./css/aluno.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/mobile.css">
+    <script src="./js/aluno.js" defer type="module"></script>
     <link rel="icon" href="./img/logo-image.png">
 </head>
+
 <body>
     <header>
 
@@ -28,82 +31,83 @@
             <i class="fa-solid fa-share-from-square"></i>
             <p>Voltar</p>
         </a>
-        
+
     </header>
 
-    <main>
+    <main id="main">
 
-        <div class="card-aluno">
-            <img class="aluno" src="./img/aluno.png" alt="">
-            <p class="nome">José Matheus da Silva Miranda</p>
+        <div class="card-aluno" id="card">
+            <img class="aluno" src="./img/aluna.png" alt="">
+            <p class="nome"></p>
         </div>
 
-        <div class="card-nota">
+        <div class="card-nota" id="card-nota">
 
-              <div class="materia">
-                  <p class="media-vermelha">20</p>
-                   <div class="barra">
-                       <div class="nota-baixa"></div>
-                   </div> 
-                   <p class="sigla">SOP</p>
-              </div>
 
-              <div class="materia">
+            <!-- <div class="materia">
+                <p class="media-vermelha">20</p>
+                <div class="barra">
+                    <div class="nota-baixa"></div>
+                </div>
+                <p class="sigla">SOP</p>
+            </div>
+
+            <div class="materia">
                 <p class="media-amarela">60</p>
-                 <div class="barra">
-                     <div class="nota-media"></div>
-                 </div> 
-                 <p class="sigla">SOP</p>
+                <div class="barra">
+                    <div class="nota-media"></div>
+                </div>
+                <p class="sigla">SOP</p>
             </div>
 
             <div class="materia">
                 <p class="media-azul">100</p>
-                 <div class="barra">
-                     <div class="nota-alta"></div>
-                 </div> 
-                 <p class="sigla">SOP</p>
+                <div class="barra">
+                    <div class="nota-alta"></div>
+                </div>
+                <p class="sigla">SOP</p>
             </div>
 
             <div class="materia">
                 <p class="media-amarela">60</p>
-                 <div class="barra">
-                     <div class="nota-media"></div>
-                 </div> 
-                 <p class="sigla">SOP</p>
+                <div class="barra">
+                    <div class="nota-media"></div>
+                </div>
+                <p class="sigla">SOP</p>
             </div>
 
             <div class="materia">
                 <p class="media-vermelha">20</p>
-                 <div class="barra">
-                     <div class="nota-baixa"></div>
-                 </div> 
-                 <p class="sigla">SOP</p>
+                <div class="barra">
+                    <div class="nota-baixa"></div>
+                </div>
+                <p class="sigla">SOP</p>
             </div>
 
             <div class="materia">
                 <p class="media-azul">100</p>
-                 <div class="barra">
-                     <div class="nota-alta"></div>
-                 </div> 
-                 <p class="sigla">SOP</p>
+                <div class="barra">
+                    <div class="nota-alta"></div>
+                </div>
+                <p class="sigla">SOP</p>
             </div>
 
             <div class="materia">
                 <p class="media-amarela">60</p>
-                 <div class="barra">
-                     <div class="nota-media"></div>
-                 </div> 
-                 <p class="sigla">SOP</p>
+                <div class="barra">
+                    <div class="nota-media"></div>
+                </div>
+                <p class="sigla">SOP</p>
             </div>
 
             <div class="materia">
                 <p class="media-vermelha">20</p>
-                 <div class="barra">
-                     <div class="nota-baixa"></div>
-                 </div> 
-                 <p class="sigla">SOP</p>
-            </div>            
-             
+                <div class="barra">
+                    <div class="nota-baixa"></div>
+                </div>
+                <p class="sigla">SOP</p>
+            </div> -->
+
         </div>
 
     </main>
@@ -114,18 +118,18 @@
             <div class="contato">
                 <i class="fa-solid fa-phone"></i><span>(11) 4774-4700</span>
             </div>
-            
+
             <div class="contato">
                 <i class="fa-solid fa-envelope"></i><span>lionschool@gmail.com</span>
             </div>
 
             <div class="contato">
-                <i class="fa-solid fa-location-dot"></i><span>Rua tcc, 211,  Centro, Jandira</span>
+                <i class="fa-solid fa-location-dot"></i><span>Rua tcc, 211, Centro, Jandira</span>
             </div>
         </div>
 
         <div class="container-copy">
-            <p>Copyright &copy; 2023 | Guilherme e Miguel</p>
+            <p>Copyright &copy; 2023 | Guilherme Lima & Miguel Joaquim</p>
         </div>
 
         <div class="container-social">
@@ -139,7 +143,7 @@
             </div>
 
             <div class="social">
-                <i class="fa-brands fa-instagram"></i>            
+                <i class="fa-brands fa-instagram"></i>
             </div>
 
             <div class="social">
@@ -148,5 +152,7 @@
         </div>
 
     </footer>
+    
 </body>
+
 </html>
