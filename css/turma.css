@@ -27,6 +27,10 @@ main {
 .legenda-mobile{
     display: none;
 }
+.bars {
+    display: flex;
+    gap: 100px;
+}
 
 select {
     background: none;
@@ -36,7 +40,6 @@ select {
     color: var(--desktop-color);
     font-size: 1.1rem;
     cursor: pointer;
-
 }
 
 select option {
@@ -155,12 +158,12 @@ select option {
     }
     
     .legenda-mobile select option {
-        color: #3347B0;
+        color: #0027e7;
         font-size: 1rem;
         background-color: white;
 }
     .legenda-mobile select option:last-child {
-    color: #E5B657;
+    color: #ffaa00;
     font-size: 1rem;
 }
 

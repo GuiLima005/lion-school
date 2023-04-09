@@ -9,7 +9,7 @@ const criarAluno = (aluno) => {
 
     let foto = localStorage.getItem("foto")
     let novaFoto = document.querySelector(".aluno")
-    novaFoto.innerHTML= foto
+    novaFoto.src= foto
 
     // const cardAluno = document.createElement('div')
     // cardAluno.classList.add('card-aluno')
@@ -70,7 +70,7 @@ const criarNotas = (diciplina) => {
 
     const sigla = document.createElement('p')
     sigla.classList.add('sigla')
-    // sigla.textContent = diciplina.nome[0]
+    // sigla.textContent = diciplina.nome
 
 
     materia.append(media, barra, sigla)
