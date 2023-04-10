@@ -38,6 +38,7 @@ const criarListaAlunos = (aluno) => {
     nome.id = aluno.nome
 
     var select = document.getElementById('status')
+    
     // Função para pegar o valor dos options
     select.addEventListener('change', function () {
         let valor = select.value

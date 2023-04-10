@@ -2,7 +2,7 @@
 
 |      MOBILE         |          DESKTOP       |
 |:-------------------:|:-----------------------:
-|![](./img/mobile.jpg)|![](./img/loginpage.jpg)|
+|![](./img/mobile.png)|![](./img/desktop.png)|
 |                     |                        |
 
 [Clique aqui](https://guilima005.github.io/lion-school/) para acessar o site!

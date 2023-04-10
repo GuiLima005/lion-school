@@ -43,3 +43,5 @@ const carregarCurso = async () => {
 }
 
 carregarCurso()
+
+// let dicipli = curso.disciplinas.split(' ').map(word => word.charAt(0)).join('')
