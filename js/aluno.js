@@ -70,7 +70,7 @@ const criarNotas = (diciplina) => {
 
     const sigla = document.createElement('p')
     sigla.classList.add('sigla')
-    // sigla.textContent = diciplina.nome
+    sigla.textContent = diciplina.nome.split(' ').map(word => word.charAt(0)).join('').toUpperCase()
 
 
     materia.append(media, barra, sigla)
@@ -83,7 +83,7 @@ const criarNotas = (diciplina) => {
 const carregarAluno = async () => {
 
     let matricula = localStorage.getItem("matricula")
-    const url = `http://localhost:8080/v1/lion-school/matricula?matricula=${matricula}`
+    const url = `https://api-school-n6sg.onrender.com/v1/lion-school/matricula?matricula=${matricula}`
 
     const response = await fetch (url)
     

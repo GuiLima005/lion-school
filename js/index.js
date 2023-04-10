@@ -27,7 +27,7 @@ const criarCurso = (curso) => {
 
 const carregarCurso = async () => {
 
-    const url = `http://localhost:8080/v1/lion-school/cursos`
+    const url = `https://api-school-n6sg.onrender.com/v1/lion-school/cursos`
 
     const response = await fetch(url)
 

@@ -84,7 +84,7 @@ const criarListaAlunos = (aluno) => {
 const carregarListaAlunos = async () => {
 
     let siglaCurso = localStorage.getItem("sigla")
-    const url = `http://localhost:8080/v1/lion-school/alunos/curso?sigla=${siglaCurso}`
+    const url = `https://api-school-n6sg.onrender.com/v1/lion-school/alunos/curso?sigla=${siglaCurso}`
 
     const response = await fetch(url)
 
@@ -98,3 +98,6 @@ const carregarListaAlunos = async () => {
     novoAluno.replaceChildren(...alunosCard)
 }
 carregarListaAlunos()
+
+// const name = sigla.nome.split(' ').map(word => word.charAt(0)).join('')
+
