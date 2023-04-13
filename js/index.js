@@ -33,7 +33,6 @@ const carregarCurso = async () => {
 
     const data = await response.json()
 
-
     console.log(data);
 
     const novoCurso = document.getElementById('boxs')
@@ -44,4 +43,4 @@ const carregarCurso = async () => {
 
 carregarCurso()
 
-// let dicipli = curso.disciplinas.split(' ').map(word => word.charAt(0)).join('')
+// curso.disciplinas.split(' ').map(word => word.charAt(0)).join('')

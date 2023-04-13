@@ -118,6 +118,7 @@ select option {
 }
 
 @media (max-width:640px) { 
+
     .container-main {
         display: flex;
         flex-direction: column;
@@ -132,12 +133,11 @@ select option {
     .sub-header {
         padding: 0px 15px;
     }
-    .title{
+    div .title{
         font-size: 2.3rem;
     }
     .container-alunos {
         justify-content: center;
-
         padding: 20px 0px;
     }
     .status {
@@ -167,4 +167,20 @@ select option {
     font-size: 1rem;
 }
 
+}
+
+@media (max-width:960px)  {
+
+    .sub-header {
+        height: 55px;
+    }
+    .container-main {
+        gap: 10px;
+    }
+    .title {
+        font-size: 3.5rem;
+    }
+    .container-alunos {
+        padding: 15px;
+    }
 }

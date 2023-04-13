@@ -2,7 +2,6 @@
 
 const criarAluno = (aluno) => {
     
-
     let nome = localStorage.getItem("nome")
     let nomeAluno = document.querySelector(".nome")
     nomeAluno.innerHTML = nome
@@ -36,6 +35,14 @@ const criarNotas = (diciplina) => {
 
     const media = document.createElement('p')
 
+    const barra = document.createElement('div')
+    barra.classList.add('barra')
+
+    const sigla = document.createElement('p')
+    sigla.classList.add('sigla')
+
+    sigla.textContent = diciplina.nome.split(' ').map(word => word.charAt(0)).join('').toUpperCase()
+
     const nota = document.createElement('div')
     
     if (diciplina.media >= 65) {
@@ -63,21 +70,11 @@ const criarNotas = (diciplina) => {
         nota.classList.add("nota-baixa")
         nota.style.height = `${diciplina.media}%`
     }
-  
-
-    const barra = document.createElement('div')
-    barra.classList.add('barra')
-
-    const sigla = document.createElement('p')
-    sigla.classList.add('sigla')
-    sigla.textContent = diciplina.nome.split(' ').map(word => word.charAt(0)).join('').toUpperCase()
-
 
     materia.append(media, barra, sigla)
     barra.append(nota)
     
     return materia
-
 }
 
 const carregarAluno = async () => {
@@ -88,7 +85,6 @@ const carregarAluno = async () => {
     const response = await fetch (url)
     
     const data = await response.json()
-
 
     console.log(data)
 

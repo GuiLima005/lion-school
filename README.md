@@ -2,7 +2,7 @@
 
 |      MOBILE         |          DESKTOP       |
 |:-------------------:|:-----------------------:
-|![](./img/mobile.png)|![](./img/desktop.png)|
+|![](./img/mobile3.png)|![](./img/desktop.png)|
 |                     |                        |
 
 [Clique aqui](https://guilima005.github.io/lion-school/) para acessar o site!
@@ -25,7 +25,7 @@ O projeto é o gerenciamento da escola Lion School, deverá ser realizado tanto 
 
 O Lighthouse é uma ferramenta automatizada que aprimora a qualidade dos apps da Web, simulando diversas situações que podem afetar a experiência do usuário. Relatório abaixo:
 
-![](./img/lighthouse4.png)
+![](./img/lighthouse.png)
 ---
 ##  **Ferramentas**
 - [link do Figma](https://www.figma.com/file/Emb8kotEeBQBhvwQNZU9J3/Lion-School?node-id=0-1&t=cE4NMpiOYj5l2EI8-0)

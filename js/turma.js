@@ -1,13 +1,14 @@
 'use strict'
 
 const criarTitle = () => {
+
     let title = localStorage.getItem("nomeDoCurso")
     let titleCourse = document.querySelector(".title")
     titleCourse.innerHTML = title
 }
 
 const criarListaAlunos = (aluno) => {
-
+    
     criarTitle()
 
     const cardAluno = document.createElement('a')
@@ -20,12 +21,6 @@ const criarListaAlunos = (aluno) => {
         cardAluno.classList.add('alunos-finalizado')
     }
 
-    cardAluno.onclick = () => {
-        localStorage.setItem("matricula", cardAluno.id)
-        localStorage.setItem("foto", img.id)
-        localStorage.setItem("nome", nome.id)
-    }
-
     const img = document.createElement('img')
     img.classList.add('aluno')
     img.src = aluno.foto
@@ -36,6 +31,12 @@ const criarListaAlunos = (aluno) => {
     nome.classList.add('nome')
     nome.textContent = aluno.nome
     nome.id = aluno.nome
+
+    cardAluno.onclick = () => {
+        localStorage.setItem("matricula", cardAluno.id)
+        localStorage.setItem("foto", img.id)
+        localStorage.setItem("nome", nome.id)
+    }
 
     var select = document.getElementById('status')
     

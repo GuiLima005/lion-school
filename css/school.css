@@ -102,6 +102,28 @@ main {
     }
     .professora img {
         height: 320px;
+    }    
+}
+@media (max-width: 960px) {
+
+    main {
+        padding: 65px 40px;
+        gap: 55px;
     }
-   
+    .container-right {
+        padding: 0px 96px;
+        flex-direction: column;
+    }
+
+    .container-social {
+        display: flex;
+        gap: 23px;
+        transform: translate(0px, -72px);
+    }
+    .container-copy{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translate(0px, 80px);
+    }
 }
