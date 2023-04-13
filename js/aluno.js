@@ -26,10 +26,10 @@ const criarAluno = (aluno) => {
 
     // return cardAluno
 }
+criarAluno()
 
 const criarNotas = (diciplina) => {
 
-    criarAluno()
 
     const materia = document.createElement('div')
     materia.classList.add('materia')
